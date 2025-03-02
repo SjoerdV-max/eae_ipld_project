@@ -4,9 +4,10 @@ import base64
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="Sjoerd Vester Portfolio",
     page_icon="📊",
 )
+
 
 
 def home_page():
@@ -16,16 +17,17 @@ def home_page():
         st.header("Introduction to Programming Languages for Data")
         st.write("###")
         st.write("***Final Project - Feb 2025***")
-        st.write("**Author:** <Your Name>")
+        st.write("**Author:** Sjoerd Vester")
         st.write("**Instructor:** [Enric Domingo](https://github.com/enricd)")
 
 
     # ----- Top title -----
-    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is ????</h1></div>""")  # TODO: Add your name
+    st.html("""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Sjoerd Vester</h1></div>""")
+
 
 
     # ----- Profile image file -----
-    profile_image_file_path = "profile.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+    profile_image_file_path = "sjoerd_vester.jpg"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
 
     with open(profile_image_file_path, "rb") as img_file:
         img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
@@ -40,7 +42,7 @@ def home_page():
 
 
     # ----- Personal title or short description -----
-    current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+    current_role = "Master’s Student in Data at EAE Business School"
 
     st.html(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""")
 
@@ -52,20 +54,21 @@ def home_page():
 
     # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
     st.write("""
-    - 🧑‍💻 I am a <Current Role and/or Studies> 
+- 🧑‍💻 I am a Master’s Student in Data Science at EAE Business School
 
-    - 🛩️ prev: <Previous Experience, Background or Studies>
+- 🛩️ prev: Graduated from Hotelschool The Hague with experience in hospitality and data management.
 
-    - ❤️ <Your Passion and/or Interests>
+- ❤️ Passionate about data-driven decision-making, AI, and sustainability in business.
 
-    - 🤖 <Your Personal Projects>
+- 🤖 Working on a project about integrating digital receipts in banking apps.
 
-    - 🏂 <Your Hobbies>
+- 🏂 Enjoys traveling, photography, and exploring new technologies.
 
-    - 📫 How to reach me: <Your Email>
+- 📫 How to reach me: sjoerd.vester@example.com
 
-    - 🏠 Barcelona
-    """)
+- 🏠 Based in Barcelona.
+""")
+
 
     # Feel free to add other points like your Linkedin, Github, Social Media, etc.
 
